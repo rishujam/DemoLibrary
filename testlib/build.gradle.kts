@@ -34,13 +34,13 @@ android {
 }
 
 mavenPublishing {
-    coordinates("com.example.mylibrary", "mylibrary-runtime", "1.0.3-SNAPSHOT")
+    coordinates("com.example.testlib", "demo", "1.0.0")
 
     pom {
-        name.set("My Library")
-        description.set("A description of what my library does.")
-        inceptionYear.set("2020")
-        url.set("https://github.com/username/mylibrary/")
+        name.set("demo")
+        description.set("This is a demo library")
+        inceptionYear.set("2025")
+        url.set("https://github.com/rishujam/DemoLibrary/")
         licenses {
             license {
                 name.set("The Apache License, Version 2.0")
@@ -50,15 +50,15 @@ mavenPublishing {
         }
         developers {
             developer {
-                id.set("username")
-                name.set("User Name")
-                url.set("https://github.com/username/")
+                id.set("rishujam")
+                name.set("Sudhanshu Kumar")
+                url.set("https://github.com/rishujam/")
             }
         }
         scm {
-            url.set("https://github.com/username/mylibrary/")
-            connection.set("scm:git:git://github.com/username/mylibrary.git")
-            developerConnection.set("scm:git:ssh://git@github.com/username/mylibrary.git")
+            url.set("https://github.com/rishujam/DemoLibrary/")
+            connection.set("scm:git:git://github.com/rishujam/DemoLibrary.git")
+            developerConnection.set("scm:git:ssh://git@github.com/rishujam/DemoLibrary.git")
         }
     }
 }
