@@ -63,6 +63,16 @@ mavenPublishing {
     }
 }
 
+tasks.register<Jar>("sourcesJar") {
+    archiveClassifier.set("sources")
+    from(android.sourceSets["main"].java.srcDirs)
+}
+
+tasks.register<Jar>("javadocJar") {
+    archiveClassifier.set("javadoc")
+    from(tasks["javadoc"]) // if javadoc task exists
+}
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
