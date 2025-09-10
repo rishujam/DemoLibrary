@@ -1,4 +1,4 @@
-package com.example.testlib
+package com.example.rishujam
 
 import org.junit.Test
 

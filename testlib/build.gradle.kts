@@ -5,8 +5,8 @@ plugins {
 }
 
 android {
-    namespace = "com.example.testlib"
-    compileSdk = 35
+    namespace = "io.rishujam.rishujam"
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 24
@@ -34,7 +34,7 @@ android {
 }
 
 mavenPublishing {
-    coordinates("com.example.testlib", "demo", "1.0.0")
+    coordinates("io.github.rishujam", "demo", "1.0.0")
 
     pom {
         name.set("demo")
@@ -62,17 +62,6 @@ mavenPublishing {
         }
     }
 }
-
-tasks.register<Jar>("sourcesJar") {
-    archiveClassifier.set("sources")
-    from(android.sourceSets["main"].java.srcDirs)
-}
-
-tasks.register<Jar>("javadocJar") {
-    archiveClassifier.set("javadoc")
-    from(tasks["javadoc"]) // if javadoc task exists
-}
-
 dependencies {
 
     implementation(libs.androidx.core.ktx)

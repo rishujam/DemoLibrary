@@ -1,4 +1,4 @@
-package com.example.testlib
+package io.github.rishujam
 
 class Logger {
 
