@@ -1,4 +1,4 @@
-package com.example.rishujam
+package io.github.rishujam
 
 import org.junit.Test
 

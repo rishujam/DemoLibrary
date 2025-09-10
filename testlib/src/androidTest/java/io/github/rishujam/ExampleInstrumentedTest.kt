@@ -1,4 +1,4 @@
-package com.example.rishujam
+package io.github.rishujam
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
